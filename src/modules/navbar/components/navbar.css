@@ -1,0 +1,79 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #191919;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 300;
+}
+
+.navbar-title-wrapper {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: max-content max-content;
+}
+
+.navbar-title {
+    font-size: 20px;
+    margin: 0;
+    writing-mode: vertical-lr;
+    text-align: center;
+    line-height: .9;
+  }
+  
+.rotate {
+   transform: rotate(180deg);
+}
+
+.navbar-title:hover{
+    color: #80ffff;
+    text-shadow: 2px 2px 5px fuchsia;
+    transition: all .2s ease-in-out; 
+    cursor: default;
+}
+
+.navbar-item {
+    padding: 16px 0px 16px 0px;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: all .5s ease-in-out;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar-item:hover{
+    color: #80ffff;
+    text-shadow: 2px 2px 5px fuchsia;
+}
+
+.home-icon{
+    width: 40px;
+}
+
+.navbar-icon svg{
+    width: 30px;
+    margin: 0px;
+}
+
+.navbar-icon svg > * {
+    padding: 16px 16px;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: all .5s ease-in-out;
+    stroke: #80ffff;
+}
+
+.navbar-icon:hover svg > * { 
+    transition: all .5s ease-in-out;
+    stroke: fuchsia;
+}
+
+.navbar-icon-active div svg > *  { 
+    stroke: fuchsia;
+    pointer-events: none;
+    cursor: default;
+}

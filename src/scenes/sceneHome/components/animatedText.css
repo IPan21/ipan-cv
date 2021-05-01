@@ -1,0 +1,14 @@
+
+.grow { 
+    font-weight: 800;
+    letter-spacing: 1px;
+    color:#80ffff;
+    font-size:80px;
+    transition: all .5s ease-in-out; 
+}
+
+.grow:hover { 
+    color: fuchsia;
+    transform: scale(1.5); 
+    transition: all .2s ease-in-out; 
+}
